@@ -1,11 +1,10 @@
 ﻿// Пользователь вводит 8 чисел. Поместите их в массив и распечатайте.
 
-Console.WriteLine("Введите число");
-string str = Console.ReadLine()!;
-var count = str.Length!;
-var array = new int[count];
-for (int i = 0; i < count; i++)
-{
-    array[i] = int.Parse(str[i].ToString());
-    Console.Write($" {array[i]},");
-}
+int[] A = new int[8];
+
+  for (int i = 0; i < 8; i++)
+    {
+      Console.WriteLine("Введите число");
+      A[i] = int.Parse(Console.ReadLine()!);
+    }
+Console.WriteLine("[{0}]", string.Join(", ", A));
